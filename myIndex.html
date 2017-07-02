@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Resume[我的简历]</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--particles 的CSS文件-->
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <!--页面CSS文件-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:480px)">
+</head>
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!--head nav-->
+    <header class="header">
+        <nav class="nav">
+            <ul class="navList">
+                <li id="nav-0" class="nav-li highlight" data-nav="0">主页</li>
+                <li id="nav-1" class="nav-li" data-nav="1">音乐</li>
+                <li id="nav-2" class="nav-li" data-nav="2">图片</li>
+                <li id="nav-3" class="nav-li" data-nav="3">Todo</li>
+                <li id="nav-4" class="nav-li" data-nav="4">简历</li>
+                <li class="nav-li">
+                    <a href="https://github.com/didiaodeneishuang" target="_blank">GitHub</a>
+                </li>
+            </ul>
+            <div class="line"></div>
+        </nav>
+    </header>
+    <!--网页主要内容页面-->
+    <div class="allPage" data-all="5" data-page="0" >
+        <div id="page-0" class="page">
+            <div class="togglePic" data-pic="3" data-current="0">
+                <div class="picBox">
+                    <div class="pic1">
+                        <div class="text">
+                            <h1 class="title">LEAD THE WAY</h1>
+                            <h1 class="articlePic1">Hello，I am Ivan Lee.Welcome to my page.</h1>
+                        </div>
+                    </div>
+                    <div class="pic2">
+                        <div class="text textUp">
+                            <h1 class="title textTopPic2">About me</h1>
+                            <h1 class="articlePic2">
+                                勤快、高效的90后<br>
+                                Web 前端开发工程师 <br>
+                                热爱编程 喜欢JavaScript <br>
+                                假如生活欺骗了你，不要悲伤不要心急。<br>
+                                《代码大全》会一直陪伴着你☺ ...<br>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="pic3">
+                        <div class="text textRight">
+                            <h1 class="title">随时准备出发。</h1>
+                            <h1 class="articlePic3">Be ready at any time.</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonBox">
+                    <button class="prev button" data-offset="-1">&lt;</button>
+                    <button class="next button" data-offset="1">&gt;</button>
+                </div>
+                <ul class="dotBox">
+                    <li id="dot-0" data-index="0" class="dot white"></li>
+                    <li id="dot-1" data-index="1" class="dot"></li>
+                    <li id="dot-2" data-index="2" class="dot"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="page-1" class="page">
+            <div class="musicContainer">
+                <img class="musicPlayer" src="img/musicplayer/demo.gif" alt="播放器界面图">
+                <div class="musicIntroduce notShow">
+                    <h1 class="musicTitle">
+                        Music Player
+                    </h1>
+                    <p class="musicArticle">
+                        基于H5的SPA音乐播放器<br>
+                        JS : ES6 模板字符串等新特性 写出健壮的代码 <br>
+                        优点 : 只需导入歌曲信息即可自动渲染播放器<br>
+                        HTML5 : audio标签<br>
+                        CSS3： translate、animation等新特性<br>
+                        运用高斯模糊渲染播放器背景<br>
+                        功能 : 播放、暂停、切换音乐、更改音乐进度、循环播放、查看播放列表、收藏<br>
+                    </p>
+                </div>
+                <button class="readMusic">Read More</button>
+            </div>
+        </div>
+        <div id="page-2" class="page">
+            <div class="bannerContainer">
+                <img class="banner" src="img/banner/banner.gif" alt="格栅图界面">
+                <div class="bannerIntroduce notShow">
+                    <h1 class="bannerTitle">
+                        Banner
+                    </h1>
+                    <p class="bannerArticle">
+                        基于CSS3新特性transition,运用原生JavaScript
+                        实现格栅图构件的动画效果。
+                    </p>
+                </div>
+                <button class="readBanner">Read More</button>
+            </div>
+        </div>
+        <div id="page-3" class="page">
+            <div class="todoList" data-all="3" data-theme="0">
+                <div class="todoTheme"></div>
+                <div class="todoIntroduce">
+                    <h1 class="todoTitle">
+                        TODOLIST
+                    </h1>
+                    <h2 class="todoTitle_1">
+                        多主题
+                    </h2>
+                    <p class="todoArticle">
+                        管理任务也要赏心悦目。
+                    </p>
+                </div>
+                <ul class="todoDot">
+                    <li id="circle_0" data-index="0" class="dotTheme"></li>
+                    <li id="circle_1" data-index="1" class="dotTheme"></li>
+                    <li id="circle_2" data-index="2" class="dotTheme"></li>
+                </ul>
+                <div class="phoneShow">
+                    <img class="phone" src="img/todoList/phone.jpg" alt="手机界面">
+                    <img class="phoneTheme" src="img/todoList/0.png" alt="手机主题">
+                </div>
+            </div>
+        </div>
+        <div id="page-4" class="page">
+            <div class="resumeContainer">
+                <div class="resumeSingle">
+                    <div class="resumeBg">
+                        <div class="resumeTitle">个人简历</div>
+                        <div class="singleBase">
+                            <h2>基本信息</h2>
+                            <ul class="resumeLeft">
+                                <li>姓<span></span>名：李土振</li>
+                                <li>学<span></span>历：本科</li>
+                                <li>手<span></span>机：15768341033</li>
+                                <li>年<span></span>龄： 25 岁</li>
+                                <li>求职意向：Web前端工程师</li>
+                            </ul>
+                            <ul class="resumeRight">
+                                <li>性<span></span>别：男</li>
+                                <li>毕业院校：广东工业大学(211工程)</li>
+                                <li>电子邮箱：tuzhenli@163.com</li>
+                                <li>工作年限：2年</li>
+                            </ul>
+                        </div>
+                        <div class="singleSelf">
+                            <h2>自我评价</h2>
+                            <ul>
+                                <li>1、具有良好的沟通能力、业务分析能力、解决问题能力强。</li>
+                                <li>2、学习能力强，能融会贯通其它的编程语言。</li>
+                                <li>3、具有优良的职业操守、有优秀的团队合作精神。</li>
+                                <li>4、对工作具有高度的责任心，热爱前端工作。</li>
+                            </ul>
+                        </div>
+                        <div class="singleSkill">
+                            <h2>专业技能</h2>
+                            <div class="skillContainer">
+                                <h3>HTML/CSS</h3>
+                                <ul>
+                                    <li>能够编写语义化的HTML，模块化的CSS，实现较为复杂的布局与动画。</li>
+                                    <li>熟悉已标准化的HTML5/CSS3新特性，能尝试使用未广泛实现的新标准。</li>
+                                    <li>使用HTML/CSS熟练地解决浏览器兼容问题，并开发符合W3C标准的页面。</li>
+                                </ul>
+                            </div>
+                            <div class="skillContainer">
+                                <h3>ECMAScript(JavaScript)</h3>
+                                <ul>
+                                    <li>熟悉ECMAScript(JavaScript)，熟悉ES6及更新标准，并能在项目中使用。</li>
+                                    <li>熟练掌握程序调试方法，能够快速定位并解决JavaScript代码的bug。</li>
+                                    <li>具有良好的编码习惯，代码编写很规范。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resumeSingle">
+                    <div class="resumeBg">
+                        <div class="singleSkillAdd">
+                            <div class="skillContainer">
+                                <h3>DOM/BOM 及常见 Web API</h3>
+                                <ul>
+                                    <li>熟悉原生DOM与BOM的使用，熟练掌握移动端开发。</li>
+                                    <li>熟悉使用原生JavaScript对DOM对象进行操作，以实现事件绑定、事件委托及其他复杂功能。</li>
+                                </ul>
+                            </div>
+                            <div class="skillContainer">
+                                <h3>jQuery/Lodash/Bootstrap 库</h3>
+                                <ul>
+                                    <li>熟悉jQuery/lodash库的使用，并利用其常用的函数实现对DOM操作和负责的页面效果。</li>
+                                    <li>熟悉Bootstrap的CSS模块使用，并能够完成HTML网页的渲染。</li>
+                                </ul>
+                            </div>
+                            <div class="skillContainer">
+                                <h3>Ajax/Node.js/Express框架/数据结构/React框架</h3>
+                                <ul>
+                                    <li>熟悉使用Ajax技术，进行前端与后端的交互。</li>
+                                    <li>熟悉Node.js的使用，利用Express框架配合进行后端开发。</li>
+                                    <li>利用Node.js编写爬虫程序，爬取豆瓣电影网和时光电影网的TOP100电影的信息。</li>
+                                    <li>熟练掌握常见的数据结构。</li>
+                                    <li>熟悉React框架的使用。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="singleOther">
+                            <h2>其他技能</h2>
+                            <ul>
+                                <li>熟练使用Markdowm编写得体的文档或论文，具有良好的技术交流能力。</li>
+                                <li>日常使用Git与Webstorm/Hbuilder/Atom/DW进行项目管理及代码开发，也乐于尝试新工具。</li>
+                                <li>熟练使用Photoshop/fireworks等图像处理工具，进行图像处理。</li>
+                            </ul>
+                        </div>
+                        <div class="singleWorks">
+                            <h2>作品</h2>
+                            <ul>
+                                <li>作品均采用原生JavaScript编写，并结合HTML5语义化标签和CSS3新特性进行网页结构与渲染。</li>
+                                <li><a href="https://didiaodeneishuang.github.io/myIndex/" target="_blank">我的主页</a></li>
+                                <li><a href="https://didiaodeneishuang.github.io/music-player/" target="_blank">SPA Music Player</a></li>
+                                <li><a href="https://didiaodeneishuang.github.io/banner/" target="_blank">格栅图</a></li>
+                                <li><a href="https://didiaodeneishuang.github.io/Carousel-figure/" target="_blank">轮播图</a></li>
+                                <li><a href="https://didiaodeneishuang.github.io/todoList/" target="_blank">todoList</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resumePoint">
+        <span class="point color" data-index="0">1</span><br>
+        <span class="point" data-index="1">2</span>
+    </div>
+    <footer class="footer">
+        <div class="prevPage pageButton" data-offset="-1">
+            ︽
+        </div>
+        <div class="nextPage pageButton" data-offset="1">
+            ︾
+        </div>
+    </footer>
+
+    <!-- particles 的js文件 -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <!--页面js文件-->
+    <script src="js/main.js"></script>
+</body>
+</html>
