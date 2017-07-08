@@ -1,0 +1,160 @@
+.header {
+    height: 10vh;
+}
+.text {
+    width: 80%;
+}
+.title {
+    font-size: 1.5rem;
+}
+.articlePic1, .articlePic3 {
+    font-size: 1rem;
+}
+.articlePic2 {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+}
+.dot {
+    width: 1.7rem;
+    margin: 0.6rem;
+}
+.musicPlayer {
+    width: 70vw;
+    height: 65vh;
+    left: 50%;
+    transform: translate(-50%,10%);
+}
+.musicIntroduce {
+    width: 85vw;
+    height: 26rem;
+    transform: translate(-43%,8%);
+}
+.musicTitle {
+    font-size: 1.2rem;
+}
+.musicArticle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.readMusic, .readBanner {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -100px;
+    left: 51%;
+    transform: translate(-50%,870%);
+    outline: none;
+}
+.banner {
+    width: 90vw;
+    height: 60vh;
+    left: 5%;
+    top:20%;
+    box-shadow: 5px 5px 29px black;
+}
+.bannerIntroduce {
+    width: 18rem;
+    height: 25rem;
+    left: 11%;
+    border-radius: 1rem;
+
+}
+.notShow {
+    opacity: 0!important;
+}
+.todoIntroduce {
+    display: none;
+}
+.todoDot {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    z-index: 100;
+}
+.dotTheme {
+    width: 1.0rem;
+    height: 1.0rem;
+}
+.dotTheme:hover {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.phoneShow {
+    left: 50%;
+}
+/*简历第一页*/
+.singleBase {
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+.singleBase h2 {
+    font-size: 0.8rem;
+}
+.singleBase span {
+    width: 1.0rem;
+}
+.resumeLeft {
+    margin-right: 8rem;
+}
+.singleSelf {
+    top:28%;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+.singleSelf h2 {
+    font-size: 0.8rem;
+}
+.singleSkill {
+    top:48%;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+.singleSkill h2 {
+    font-size: 0.8rem;
+}
+.skillContainer {
+    margin-top: 0.1rem;
+    padding-left: 0.6rem;
+}
+.skillContainer li {
+    line-height: 1.1rem;
+}
+/*简历第二页*/
+.singleSkillAdd {
+    /*top:48%;*/
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+}
+.singleOther {
+    top:56%;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+.singleOther h2 {
+    font-size: 0.8rem;
+}
+.singleOther li {
+    line-height: 1.1rem;
+}
+.singleWorks {
+    top:78%;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+}
+.singleWorks h2 {
+    font-size: 0.8rem;
+}
+.singleWorks li {
+    line-height: 0.9rem;
+}
+.point {
+    font-size: 1rem;
+    width:2rem;
+    height:2rem;
+    line-height: 2rem;
+}
